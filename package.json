@@ -34,9 +34,9 @@
   },
   "homepage": "https://github.com/hanjukim/uuid-d64#readme",
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/cli": "^8.0.4",
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
     "@types/node": "^17.0.30",
     "ava": "^5",
     "typescript": "^4",
