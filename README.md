@@ -47,4 +47,4 @@ Fastest decoder is uuid-d64,uuid-base64
 ```
 
 ## License
-Source files are distributed under the Apache Version 2.0 license found in the LICENSE file.
+Source files are distributed under the MIT license found in the LICENSE file.

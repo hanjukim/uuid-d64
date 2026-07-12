@@ -1,9 +1,9 @@
 const test = require('ava');
-const uuid = require('uuid').v4;
+const { randomUUID } = require('crypto');
 const { encode, decode } = require('.');
 
 test('decoded data integrity', t => {
-  const id = uuid();
+  const id = randomUUID();
   const encoded = encode(id);
   const decoded = decode(encoded);
 

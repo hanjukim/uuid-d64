@@ -1,5 +1,5 @@
 const { Suite } = require('benchmark');
-const uuid = require('uuid').v4;
+const { randomUUID } = require('crypto');
 const d64 = require('..');
 const base64 = require('uuid-base64');
 const slugid = require('slugid');
@@ -9,7 +9,7 @@ const d64s = [];
 const slugids = [];
 
 for (let i = 0; i < 100; i += 1) {
-  uuids.push(uuid());
+  uuids.push(randomUUID());
   d64s.push(d64.encode(uuids[uuids.length - 1]));
   slugids.push(slugid.encode(uuids[uuids.length - 1]));
 }
