@@ -1,6 +1,6 @@
 const { Suite } = require('benchmark');
 const { randomUUID } = require('crypto');
-const d64 = require('..');
+const d64 = require('.');
 const base64 = require('uuid-base64');
 const slugid = require('slugid');
 

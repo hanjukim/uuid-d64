@@ -9,15 +9,19 @@ $ npm install uuid-d64
 
 ## Usage
 ```javascript
+const { randomUUID } = require('crypto');
 const { encode, decode } = require('uuid-d64');
 
-const id = uuid();
+const id = randomUUID();
 const encoded = encode(id);
 const decoded = decode(encoded);
 
 console.log(id);
+// => '109156be-c4fb-41ea-b1b4-efe1671c5836'
 console.log(encoded);
+// => '384LjgIvFTelhDzWOllNCV'  (22 chars)
 console.log(decoded);
+// => '109156be-c4fb-41ea-b1b4-efe1671c5836'
 ```
 
 ## API
@@ -33,7 +37,7 @@ Type: `String`
 
 ## Benchmark
 ```
-$ node bench.js
+$ node bench/bench.js
 check x 235,406 ops/sec ±1.00% (88 runs sampled)
 uuid-d64 x 690,540 ops/sec ±0.81% (96 runs sampled)
 uuid-base64 x 395,159 ops/sec ±0.91% (91 runs sampled)
